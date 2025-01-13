@@ -1,12 +1,21 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <PackageReference Include="Ardalis.Result" />
     <PackageReference Include="MediatR" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Clean.Architecture.Core\Clean.Architecture.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Commands\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="ApplicationEventHandlers\" />
+    <Folder Include="ApplicationServices\" />
+    <Folder Include="Shared\" />
+    <Folder Include="Queries\" />
+    <Folder Include="Options\" />
   </ItemGroup>
 
 </Project>

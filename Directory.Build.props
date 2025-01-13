@@ -2,11 +2,12 @@
   <PropertyGroup>
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <TargetFramework>net9.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
+    <ImplicitUsings>disable</ImplicitUsings>
   </PropertyGroup>
   <PropertyGroup>
     <NoWarn>1591</NoWarn> <!-- Remove this to turn on warnings for missing XML Comments -->
+    <NoWarn>NU1803</NoWarn> <!-- Remove this to turn on warnings for http nuget source -->
   </PropertyGroup>
 </Project>

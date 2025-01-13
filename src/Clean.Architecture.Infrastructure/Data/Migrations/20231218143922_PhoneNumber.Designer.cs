@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Clean.Architecture.Infrastructure.Data.Migrations
 {
-    [DbContext(typeof(AppDbContext))]
+    [DbContext(typeof(xxxxDbContext))]
     [Migration("20231218143922_PhoneNumber")]
     partial class PhoneNumber
     {

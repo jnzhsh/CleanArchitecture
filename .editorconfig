@@ -16,7 +16,7 @@ indent_size = 2
 
 # Code files
 [*.{cs,csx,vb,vbx}]
-indent_size = 2
+indent_size = 4
 insert_final_newline = true
 charset = utf-8-bom
 ###############################
@@ -65,7 +65,7 @@ dotnet_naming_rule.constant_fields_should_be_pascal_case.style = pascal_case_sty
 dotnet_naming_symbols.constant_fields.applicable_kinds            = field
 dotnet_naming_symbols.constant_fields.applicable_accessibilities  = *
 dotnet_naming_symbols.constant_fields.required_modifiers          = const
-tab_width= 2
+tab_width= 4
 dotnet_naming_rule.private_members_with_underscore.symbols  = private_fields
 dotnet_naming_rule.private_members_with_underscore.style = prefix_underscore
 dotnet_naming_rule.private_members_with_underscore.severity = suggestion
@@ -105,7 +105,7 @@ csharp_prefer_simple_default_expression = true:suggestion
 csharp_style_pattern_local_over_anonymous_function = true:suggestion
 csharp_style_inlined_variable_declaration = true:suggestion
 # Namespaces
-csharp_style_namespace_declarations = file_scoped:warning
+csharp_style_namespace_declarations = block_scoped:silent
 ###############################
 # C# Formatting Rules         #
 ###############################
@@ -120,7 +120,7 @@ csharp_new_line_between_query_expression_clauses = true
 # Indentation preferences
 csharp_indent_case_contents = true
 csharp_indent_switch_labels = true
-csharp_indent_labels = flush_left
+csharp_indent_labels = one_less_than_current
 # Space preferences
 csharp_space_after_cast = false
 csharp_space_after_keywords_in_control_flow_statements = true
@@ -136,13 +136,14 @@ csharp_space_between_method_call_empty_parameter_list_parentheses = false
 # Wrapping preferences
 csharp_preserve_single_line_statements = true
 csharp_preserve_single_line_blocks = true
-csharp_using_directive_placement = outside_namespace:suggestion
+csharp_using_directive_placement = outside_namespace:silent
 csharp_prefer_simple_using_statement = true:suggestion
 csharp_style_prefer_method_group_conversion = true:silent
 csharp_style_prefer_top_level_statements = true:silent
 csharp_style_prefer_primary_constructors = true:suggestion
 csharp_style_expression_bodied_lambdas = true:silent
 csharp_style_expression_bodied_local_functions = false:silent
+csharp_prefer_system_threading_lock = true:suggestion
 ###############################
 # VB Coding Conventions       #
 ###############################
